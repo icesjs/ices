@@ -168,7 +168,9 @@ export default {
 
       const viewPath = getRouterViewPath(this, root)
       // 使用重定向跳板来刷新当前路由视图组件
-      this.$nextTick(() => $router.replace(`${viewPath ? '302' : '301'}${fullPath}`))
+      this.$nextTick(() =>
+        $router.replace(`${viewPath && viewPath !== '/' ? '302' : '/301'}${fullPath}`)
+      )
     },
 
     // 移除路由视图
