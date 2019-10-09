@@ -3,7 +3,7 @@
     <div class="content">
       <div class="logo">
         <slot name="logo">
-          <img :src="src" :alt="title" :title="title" />
+          <img v-if="src" :src="src" :alt="title" :title="title" />
         </slot>
       </div>
 
@@ -119,7 +119,7 @@ export default {
 </style>
 
 <style lang="less" scoped>
-@import '../../theme/common.less';
+@import '../../theme/default.less';
 
 .ice-logo-panel {
   display: inline-block;

@@ -246,7 +246,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import '../../theme/common.less';
+@import '../../theme/default.less';
 
 .route-transition {
   &-leave-active,

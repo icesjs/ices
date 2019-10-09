@@ -84,7 +84,7 @@ export default {
 </style>
 
 <style lang="less" scoped>
-@import '../../theme/common.less';
+@import '../../theme/default.less';
 
 .ice-splitter-pane {
   &-item {

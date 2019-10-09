@@ -78,7 +78,7 @@ export default {
 </script>
 
 <style lang="less">
-@import '../../theme/common.less';
+@import '../../theme/default.less';
 
 .ice-scrollbar {
   & > .el-scrollbar__bar {

@@ -231,7 +231,7 @@ export default {
 </script>
 
 <style lang="less">
-@import '../../theme/common.less';
+@import '../../theme/default.less';
 
 .ice-aside-menu,
 .ice-aside-menu-popper {

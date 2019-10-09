@@ -347,7 +347,7 @@ export default {
 </script>
 
 <style lang="less">
-@import '../../theme/common.less';
+@import '../../theme/default.less';
 .ice-tabs-view-content-wrapper {
   box-sizing: border-box;
   padding: @layout-tabs-view-content-padding;
@@ -355,7 +355,7 @@ export default {
 </style>
 
 <style lang="less" scoped>
-@import '../../theme/common.less';
+@import '../../theme/default.less';
 
 .ice-tabs-view {
   height: 100%;

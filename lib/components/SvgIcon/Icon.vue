@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style lang="less">
-@import '../../theme/common.less';
+@import '../../theme/default.less';
 
 .ice-svg-icon {
   font-size: @svg-icon-default-font-size;

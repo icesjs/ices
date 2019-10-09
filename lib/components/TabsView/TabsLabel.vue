@@ -8,7 +8,7 @@ function getTabLabelVNodes(createElement, labelProp, route) {
   if (typeof labelProp === 'string') {
     label = route[labelProp]
   } else if (typeof labelProp === 'function') {
-    label = labelProp(createElement, route, component)
+    label = labelProp(route, component, createElement)
     if (label !== null && typeof label === 'object') {
       return [label]
     }
