@@ -209,14 +209,22 @@ export default {
         $menuItemsStore[itemProps.index] = { ...itemProps }
       }
 
-      return $createElement(MenuItem, { class: 'ice-menu-item', props: itemProps }, [
-        ...this.createIcon(item, items),
-        $createElement(
-          'span',
-          { class: 'ice-menu-item-title', slot: 'title' },
-          getVNodeChildren(title)
-        ),
-      ])
+      return $createElement(
+        MenuItem,
+        {
+          class: 'ice-menu-item',
+          props: itemProps,
+          key: itemProps.index || items.indexOf(item),
+        },
+        [
+          ...this.createIcon(item, items),
+          $createElement(
+            'span',
+            { class: 'ice-menu-item-title', slot: 'title' },
+            getVNodeChildren(title)
+          ),
+        ]
+      )
     },
 
     createMenuGroup(groupTitle, item, children, items) {
@@ -252,6 +260,7 @@ export default {
               popperClass: mergeClass(popperClass, customProps.popperClass),
             }
           ),
+          key: subProps.index || items.indexOf(item),
         },
         [
           this.createSlotElement('title', title, item, items),
