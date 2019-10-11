@@ -145,6 +145,10 @@ export default {
   },
 
   methods: {
+    setActiveIndex(index) {
+      this.currentActive = ['string', 'number'].includes(typeof index) ? `${index}` : ''
+    },
+
     refreshActiveIndex() {
       const { defaultActive, router, $route } = this
       let activeIndex
