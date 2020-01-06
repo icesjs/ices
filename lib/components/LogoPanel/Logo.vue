@@ -122,7 +122,6 @@ export default {
 @import '../../theme/default.less';
 
 .ice-logo-panel {
-  display: inline-block;
   vertical-align: middle;
   height: 100%;
   box-sizing: border-box;
