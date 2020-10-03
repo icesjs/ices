@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>echart 使用模版 | icefox</title>
+    <meta name="description" content="基于 ElementUI 的企业中后台应用框架❤️">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.3f25eecc.css" as="style"><link rel="preload" href="/assets/js/app.488be3da.js" as="script"><link rel="preload" href="/assets/js/11.b6872ef1.js" as="script"><link rel="prefetch" href="/assets/js/10.5e8c0265.js"><link rel="prefetch" href="/assets/js/12.6499d39a.js"><link rel="prefetch" href="/assets/js/13.8beb6b76.js"><link rel="prefetch" href="/assets/js/14.6f312275.js"><link rel="prefetch" href="/assets/js/15.7f7a4725.js"><link rel="prefetch" href="/assets/js/16.fbadca78.js"><link rel="prefetch" href="/assets/js/17.e4752a57.js"><link rel="prefetch" href="/assets/js/18.dc99ea95.js"><link rel="prefetch" href="/assets/js/19.5c685458.js"><link rel="prefetch" href="/assets/js/2.3e762a60.js"><link rel="prefetch" href="/assets/js/20.5ea4e7d9.js"><link rel="prefetch" href="/assets/js/21.394e4747.js"><link rel="prefetch" href="/assets/js/22.c22bfe45.js"><link rel="prefetch" href="/assets/js/23.55217ea0.js"><link rel="prefetch" href="/assets/js/24.7efcb354.js"><link rel="prefetch" href="/assets/js/25.a414cf5a.js"><link rel="prefetch" href="/assets/js/26.f5a54f5f.js"><link rel="prefetch" href="/assets/js/27.5fe17a91.js"><link rel="prefetch" href="/assets/js/3.5be415c3.js"><link rel="prefetch" href="/assets/js/4.f29072a0.js"><link rel="prefetch" href="/assets/js/5.76400afa.js"><link rel="prefetch" href="/assets/js/6.fe0024a0.js"><link rel="prefetch" href="/assets/js/7.7a1dff7c.js"><link rel="prefetch" href="/assets/js/8.96da46b8.js"><link rel="prefetch" href="/assets/js/9.3c00e0bf.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.3f25eecc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">icefox</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/introduce.html" class="nav-link">指南</a></div><div class="nav-item"><a href="/component/installation.html" class="nav-link">组件</a></div><div class="nav-item"><a href="/config/builder.html" class="nav-link">配置</a></div> <a href="https://github.com/icesjs/ices" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/introduce.html" class="nav-link">指南</a></div><div class="nav-item"><a href="/component/installation.html" class="nav-link">组件</a></div><div class="nav-item"><a href="/config/builder.html" class="nav-link">配置</a></div> <a href="https://github.com/icesjs/ices" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading"><span>开发指南</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/component/installation.html" class="sidebar-link">安装</a></li><li><a href="/component/customize-theme.html" class="sidebar-link">定制主题</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading open"><span>组件</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/component/layout.html" class="sidebar-link">Layout 布局</a></li><li><a href="/component/tabs-view.html" class="sidebar-link">TabsView 路由标签页</a></li><li><a href="/component/aside-menu.html" class="sidebar-link">AsideMenu 导航菜单</a></li><li><a href="/component/page-table.html" class="sidebar-link">PageTable 分页表格</a></li><li><a href="/component/page-filter.html" class="sidebar-link">PageFilter 分页表格</a></li><li><a href="/component/date-picker.html" class="sidebar-link">DatePicker 日期选择器</a></li><li><a href="/component/chart.html" class="active sidebar-link">echart 使用模版</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/component/chart.html#echart安装与引用" class="sidebar-link">echart安装与引用</a></li><li class="sidebar-sub-header"><a href="/component/chart.html#使用方式" class="sidebar-link">使用方式</a></li><li class="sidebar-sub-header"><a href="/component/chart.html#常用配置-option-attributes" class="sidebar-link">常用配置 option.Attributes</a></li><li class="sidebar-sub-header"><a href="/component/chart.html#初始化echart" class="sidebar-link">初始化echart</a></li><li class="sidebar-sub-header"><a href="/component/chart.html#蒙圈点之-数据处理" class="sidebar-link">蒙圈点之--数据处理</a></li><li class="sidebar-sub-header"><a href="/component/chart.html#蒙圈点之-自定义hover" class="sidebar-link">蒙圈点之--自定义hover</a></li><li class="sidebar-sub-header"><a href="/component/chart.html#模版bar" class="sidebar-link">模版Bar</a></li><li class="sidebar-sub-header"><a href="/component/chart.html#模版line" class="sidebar-link">模版line</a></li><li class="sidebar-sub-header"><a href="/component/chart.html#模版pie" class="sidebar-link">模版pie</a></li></ul></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="echart-使用模版"><a href="#echart-使用模版" aria-hidden="true" class="header-anchor">#</a> echart 使用模版</h1> <p>chart模版是对于业务常用echart封装的复用模版，copy相应类型可直接使用，如果有定制需求，可查看官方api</p> <h2 id="echart安装与引用"><a href="#echart安装与引用" aria-hidden="true" class="header-anchor">#</a> echart安装与引用</h2> <p>npm install echart<br>
+eg<br>
+import Vue from 'vue'<br>
+import echarts from 'echarts'<br>
+Vue.use(echarts)</p> <h2 id="使用方式"><a href="#使用方式" aria-hidden="true" class="header-anchor">#</a> 使用方式</h2> <h3 id="基本配置说明"><a href="#基本配置说明" aria-hidden="true" class="header-anchor">#</a> 基本配置说明</h3> <h4 id="模版"><a href="#模版" aria-hidden="true" class="header-anchor">#</a> 模版</h4> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>myChart<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="常用配置-option-attributes"><a href="#常用配置-option-attributes" aria-hidden="true" class="header-anchor">#</a> 常用配置 option.Attributes</h2> <p>完整配置项手册api 可以查看- <a href="https://www.echartsjs.com/option.html#title" target="_blank" rel="noopener noreferrer">官方<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <table><thead><tr><th>参数</th> <th style="text-align:center">说明</th> <th style="text-align:center">类型</th> <th style="text-align:right">默认值</th></tr></thead> <tbody><tr><td>title</td> <td style="text-align:center">标题</td> <td style="text-align:center">String</td> <td style="text-align:right"></td></tr> <tr><td>color</td> <td style="text-align:center">主题色</td> <td style="text-align:center">String or Array</td> <td style="text-align:right"></td></tr> <tr><td>legend</td> <td style="text-align:center">图例</td> <td style="text-align:center">String</td> <td style="text-align:right">'plain'：普通图例。缺省就是普通图例。'scroll'：可滚动翻页的图例。当图例数量较多时可以使用</td></tr> <tr><td>grid</td> <td style="text-align:center">直角坐标系内绘图网格</td> <td style="text-align:center">Object</td> <td style="text-align:right"></td></tr> <tr><td>xAxis</td> <td style="text-align:center">直角坐标系 grid 中的 x 轴</td> <td style="text-align:center">Object</td> <td style="text-align:right"></td></tr> <tr><td>yAxis</td> <td style="text-align:center">直角坐标系 grid 中的 y 轴</td> <td style="text-align:center">Object</td> <td style="text-align:right"></td></tr> <tr><td>series</td> <td style="text-align:center">绘制图表数据</td> <td style="text-align:center">Array</td> <td style="text-align:right">例series[i]-bar = Object</td></tr> <tr><td>tooltip</td> <td style="text-align:center">提示框</td> <td style="text-align:center">Object</td> <td style="text-align:right"></td></tr> <tr><td>toolbox</td> <td style="text-align:center">工具栏</td> <td style="text-align:center">Object</td> <td style="text-align:right">内置保存为图片saveAsImage，重置restore，缩放dataZoom，类型切换magicType，自定义</td></tr></tbody></table> <h2 id="初始化echart"><a href="#初始化echart" aria-hidden="true" class="header-anchor">#</a> 初始化echart</h2> <div class="language-vue extra-class"><pre class="language-vue"><code>method:{
+    initChart(){
+        let myChart = echarts.init(document.getElementById('myChart'))
+            myChart.clear()
+            myChart.setOption(option)
+    }
+}
+
+</code></pre></div><h2 id="蒙圈点之-数据处理"><a href="#蒙圈点之-数据处理" aria-hidden="true" class="header-anchor">#</a> 蒙圈点之--数据处理</h2> <p>点击事件callback = series.data[i]<br>
+配置非常灵活，不要怕，敢于尝试</p> <div class="language-vue extra-class"><pre class="language-vue"><code>method:{
+    let data = [
+        {id: '1', name: '星期一', value: '10', age: '25'},
+        {id: '2', name: '星期二', value: '13', age: '25'},
+        {id: '3', name: '星期三', value: '3', age: '25'},
+        {id: '4', name: '星期四', value: '18', age: '25'},
+        {id: '5', name: '星期五', value: '6', age: '25'},
+        {id: '6', name: '星期六', value: '8', age: '25'},
+        {id: '7', name: '星期日', value: '20', age: '25'},
+    ]
+    let XData = []
+    let seriesData = []
+    if(Array.isArray(data)){
+        data.map((item)=&gt;{
+            XData.push(item.name)
+            seriesData.push({
+                id:item.id,
+                value:item.value,
+                name:item.name,
+                age:item.age
+            })
+        })
+    }
+    // 应用
+    option.xAxis.data = XData
+    option.series.data = seriesData 
+}
+    
+</code></pre></div><h2 id="蒙圈点之-自定义hover"><a href="#蒙圈点之-自定义hover" aria-hidden="true" class="header-anchor">#</a> 蒙圈点之--自定义hover</h2> <div class="language-vue extra-class"><pre class="language-vue"><code>tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+        type: 'shadow', // 默认为直线，可选为：'line' | 'shadow'
+    },
+    formatter:function(params){
+        let res = ''
+        retrun res
+    }
+},
+</code></pre></div><h2 id="模版bar"><a href="#模版bar" aria-hidden="true" class="header-anchor">#</a> 模版Bar</h2> <div class="language-vue extra-class"><pre class="language-vue"><code>initBar(data) {
+    let colorList = [
+        '#1890FF',
+        '#41D9C7',
+        '#2FC25B',
+        '#FACC14',
+        '#E6965C',
+        '#223273',
+        '#7564CC',
+        '#8543E0',
+        '#5C8EE6',
+        '#13C2C2',
+        '#5CA3E6',
+        '#3436C7',
+        '#B381E6',
+        '#F04864',
+        '#D598D9',
+    ]
+    let XData = []
+    let seriesData = []
+    if (Array.isArray(data)) {
+        data.map((item) =&gt; {
+            let {name,id,value,age} = item
+            XData.push(name)
+            seriesData.push({
+                id: id,
+                value: value,
+                name: name,
+                age: age
+            })
+        })
+    }
+    let option = {
+        title:{
+            text:'Bar Demo'
+        },
+        color: colorList,
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                // 坐标轴指示器，坐标轴触发有效
+                type: 'shadow', // 默认为直线，可选为：'line' | 'shadow'
+            },
+        },
+        dataZoom: [{type: 'inside'}],
+        toolbox: {
+            show: true,
+            right: 10,
+            top: 0,
+            itemSize: 18,
+            feature: {
+                myTocol: {
+                    show: true,
+                    title: '放大按钮',
+                    icon: 'image://static/img/enLarge.png',
+                    z: '999',
+                    left: 'center',
+                    onclick: () =&gt; {
+                        console.log('放大')
+                    },
+                },
+                saveAsImage: {title: '导出图片',show: true, icon: 'image://static/img/downLoad.png'},
+                myExcel: {
+                    show: true,
+                    title: '导出Excel',
+                    icon: 'image://static/img/excelReport.png',
+                    z: '999',
+                    left: 'center',
+                    onclick: () =&gt; {
+                        console.log('导出')
+                    },
+                },
+                myTool: {
+                    show: true,
+                    title: '自定义',
+                    icon: 'image://static/img/setIng.png',
+                    z: '999',
+                    left: 'center',
+                    onclick: () =&gt; {
+                        console.log('自定义')
+                    },
+                },
+            },
+        },
+        grid: {
+            left: '3%',
+            right: '5%',
+            bottom: '3%',
+            containLabel: true,
+        },
+        xAxis: [
+            {
+                type: 'category',
+                data: XData,
+                axisTick: {
+                    alignWithLabel: true,
+                },
+            },
+        ],
+        yAxis: [
+            {
+                type: 'value',
+            },
+        ],
+        series: [
+            {
+                type: 'bar',
+                barWidth: '60%',
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'top',
+                    },
+                },
+                data: seriesData,
+            },
+        ],
+    }
+    this.$nextTick(function () {
+        let myChart = echarts.init(document.getElementById('bar'))
+        myChart.clear()
+        myChart.setOption(option)
+        // 点击
+        myChart.on('click', function (params) {
+           console.log(params)
+        })
+    })
+},
+</code></pre></div><h2 id="模版line"><a href="#模版line" aria-hidden="true" class="header-anchor">#</a> 模版line</h2> <div class="language-vue extra-class"><pre class="language-vue"><code>initLine(data) {
+    let colorList = [
+        '#1890FF',
+        '#41D9C7',
+        '#2FC25B',
+        '#FACC14',
+        '#E6965C',
+        '#223273',
+        '#7564CC',
+        '#8543E0',
+        '#5C8EE6',
+        '#13C2C2',
+        '#5CA3E6',
+        '#3436C7',
+        '#B381E6',
+        '#F04864',
+        '#D598D9',
+    ]
+    let xAxisData = []
+    let seriesData = []
+    data.map((item) =&gt; {
+        let { value, name } = item
+        xAxisData.push(name)
+        seriesData.push(value)
+    })
+    let option = {
+        title:{
+            text:'Line Demo'
+        },
+        color: colorList,
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                // 坐标轴指示器，坐标轴触发有效
+                type: 'shadow', // 默认为直线，可选为：'line' | 'shadow'
+            },
+        },
+        dataZoom: [{ type: 'inside' }],
+        grid: {
+            left: '3%',
+            right: '5%',
+            bottom: '3%',
+            containLabel: true,
+        },
+        xAxis: {
+            type: 'category',
+            data: xAxisData,
+        },
+        yAxis: {
+            type: 'value',
+        },
+        series: [
+            {
+                data: seriesData,
+                type: 'line',
+            },
+        ],
+    }
+    this.$nextTick(function() {
+        document.oncontextmenu = function() {
+            return false
+        }
+        let myChart = echarts.init(document.getElementById('line'))
+        myChart.clear()
+        myChart.setOption(option)
+    })
+},
+</code></pre></div><h2 id="模版pie"><a href="#模版pie" aria-hidden="true" class="header-anchor">#</a> 模版pie</h2> <div class="language-vue extra-class"><pre class="language-vue"><code> initPie(data) {
+    let seriesData = []
+    data.map((item) =&gt; {
+        let { value,id,name} = item
+        seriesData.push({
+            name: name,
+            value: value,
+            id:id
+        })
+    })
+
+    let colorList = [
+        '#1890FF',
+        '#41D9C7',
+        '#2FC25B',
+        '#FACC14',
+        '#E6965C',
+        '#223273',
+        '#7564CC',
+        '#8543E0',
+        '#5C8EE6',
+        '#13C2C2',
+        '#5CA3E6',
+        '#3436C7',
+        '#B381E6',
+        '#F04864',
+        '#D598D9',
+    ]
+    let option = {
+        title:{
+            text:'Pie Demo'
+        },
+        color: colorList,
+        grid: {
+            left: '3%',
+            right: '5%',
+            bottom: '3%',
+            containLabel: true,
+        },
+        tooltip: {
+            trigger: 'item',
+            formatter: '{b} : {c} ({d}%)',
+        },
+        series: [
+            {
+                name: 'pie',
+                type: 'pie',
+                radius: '55%',
+                center: ['50%', '60%'],
+                data: seriesData,
+                itemStyle: {
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)',
+                    },
+                },
+            },
+        ],
+    }
+    this.$nextTick(function() {
+        document.oncontextmenu = function() {
+            return false
+        }
+        let myChart = echarts.init(document.getElementById('pie'))
+        myChart.clear()
+        myChart.setOption(option)
+        // 查看详情
+        myChart.on('click', function(params) {
+           console.log(params)
+        })
+    })
+}
+</code></pre></div></div> <div class="page-edit"><div class="edit-link"><a href="https://github.com/icesjs/ices/edit/master/docs/component/chart.md" target="_blank" rel="noopener noreferrer">在 Github 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">最后更新: </span> <span class="time">7/19/2019, 4:28:46 PM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/component/date-picker.html" class="prev">
+          DatePicker 日期选择器
+        </a></span> <!----></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.488be3da.js" defer></script><script src="/assets/js/11.b6872ef1.js" defer></script>
+  </body>
+</html>
