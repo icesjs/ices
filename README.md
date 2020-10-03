@@ -2,4 +2,4 @@
 
 A library for vue app.
 
-[中文在线文档](https://utryfe.github.io/icefox-docs/)
+[中文在线文档](https://icesjs.github.io/ices/)

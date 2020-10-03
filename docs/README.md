@@ -10,5 +10,5 @@ features:
     details: 丰富强大的构建支持，基于 @vue/cli，但远不止于此。
   - title: 定制
     details: 要实用，不折腾。
-footer: MIT Licensed | Copyright © 2019-present utryfe
+footer: MIT Licensed | Copyright © 2019-present icesjs
 ---

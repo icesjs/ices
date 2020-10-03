@@ -94,7 +94,7 @@ icefox **内置的主题样式是基于 Less 预编译样式语言**的，这里
 
 [这里](https://cli.vuejs.org/zh/guide/creating-a-project.html) 是 vue 官方使用命令行工具创建项目的详细示例，有兴趣的话你也可以过去瞧瞧。
 
-创建好项目后，我们还需要添加下 [ut-builder](https://github.com/utryfe/vue-cli-builder#readme) 插件。
+创建好项目后，我们还需要添加下 [ut-builder](https://github.com/icesjs/vue-cli-builder#readme) 插件。
 在安装插件前，推荐你先看一下 vue 官方关于 [命令行工具插件](https://cli.vuejs.org/zh/guide/plugins-and-presets.html) 的说明，
 当然往后你再去了解也是可以的。
 
@@ -139,7 +139,7 @@ ut-builder 会考虑到用户自己的配置并做相应增强。其他命令行
 
 ## 使用 icefox 组件
 
-[icefox](https://github.com/utryfe/icefox) 提供了一些可快速搭建企业级中后台系统框架的组件和工具，其本身也依赖于 [element-ui](https://element.eleme.cn/#/zh-CN) 的一些基础组件。
+[icefox](https://github.com/icesjs/icefox) 提供了一些可快速搭建企业级中后台系统框架的组件和工具，其本身也依赖于 [element-ui](https://element.eleme.cn/#/zh-CN) 的一些基础组件。
 与 element-ui 类似，我们也有两种方式来使用 icefox 提供的组件。
 
 一种是直接从 [icefox](https://www.npmjs.com/package/icefox) 包里面导入需要的组件使用。
@@ -207,9 +207,9 @@ export default {
 
 运行结果：
 
-<ice-aside-menu 
-  default-active="id_2" 
-  style="width:200px" 
+<ice-aside-menu
+  default-active="id_2"
+  style="width:200px"
   :menu-items="[{ id: 'id_1', title: '菜单项一' },
    { id: 'sub', title: '子菜单', children: [{ id: 'id_2', title: '菜单项二' }] }]"
 />
@@ -220,8 +220,8 @@ export default {
 的 [Menu](https://element.eleme.cn/#/zh-CN/component/menu) 组件，icefox 对其进行了**高阶封装**，
 扩展了它的能力，也使得它更易于在项目中使用，还为它量身定制了一些主题样式，使得在项目中可以通过 Less 变量来定制一些风格。
 
-如果你想去看一下代码，[AsideMenu](https://github.com/utryfe/icefox/blob/master/lib/components/AsideMenu/AsideMenu.vue) 和
-[Menu](https://github.com/utryfe/icefox/blob/master/lib/components/Menu/ElementMenu.vue) 这两个组件就是上面的实现了。
+如果你想去看一下代码，[AsideMenu](https://github.com/icesjs/icefox/blob/master/lib/components/AsideMenu/AsideMenu.vue) 和
+[Menu](https://github.com/icesjs/icefox/blob/master/lib/components/Menu/ElementMenu.vue) 这两个组件就是上面的实现了。
 
 事实上，**icefox 大部分组件都是对其他基础组件的高阶封装**，目前我们是基于 element-ui 来封装的，
 当然也可以封装其他组件库的基础组件了，但目前我们并未打算这样去做。
@@ -504,7 +504,7 @@ async someAction({call, dispatch}, payload) {
 :::tip 提示
 请求插件 `$http` 是对 `axios` 的"高阶"扩展封装，因此 `axios` 的所有能力及使用方式，都可以被运用。换言之，如果你熟悉了 `axios` 的使用方式，
 `$http` 就是 `axios` 的"别名"而已。但这并不是简单的引用，后面我们会有专门的文档说明。如果你对源码感兴趣的话，
-[request](https://github.com/utryfe/icefox/blob/master/lib/plugins/request.js) 插件正是这个封装的实现。
+[request](https://github.com/icesjs/icefox/blob/master/lib/plugins/request.js) 插件正是这个封装的实现。
 :::
 
 我们在示例项目的 `Home.route.vue` 单文件组件里演示下发送请求的操作。这里我们模拟一个获取用户姓名并在页面上显示问候语的场景。

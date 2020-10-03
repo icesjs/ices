@@ -55,14 +55,14 @@
     "lib"
   ],
   "author": {
-    "name": "utryfe",
+    "name": "Stone",
     "email": "star2018@outlook.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://github.com/utryfe/icefox.git"
+    "url": "git+ssh://github.com/icesjs/icefox.git"
   },
-  "homepage": "https://utryfe.github.io/icefox-docs/",
+  "homepage": "https://icesjs.github.io/ices/",
   "engines": {
     "node": ">=8.6.0"
   },

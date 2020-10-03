@@ -70,5 +70,5 @@ list: [
 | handleEvent |   选中数据   | Function |      / |
 
 ## 源码
-- [在线源码](https://github.com/utryfe/icefox/blob/master/lib/components/PageFilter/PageFilter.vue)
+- [在线源码](https://github.com/icesjs/icefox/blob/master/lib/components/PageFilter/PageFilter.vue)
 - [在线Demo](http://www.star2018.com/table)

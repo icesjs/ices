@@ -1,6 +1,6 @@
 # 介绍
 
-[icefox](https://github.com/utryfe/icefox) 是一些基于 [vue](https://cn.vuejs.org/) 和 [element-ui](https://element.eleme.cn/#/zh-CN) 的企业中后台应用开发工具和组件。
+[icefox](https://github.com/icesjs/icefox) 是一些基于 [vue](https://cn.vuejs.org/) 和 [element-ui](https://element.eleme.cn/#/zh-CN) 的企业中后台应用开发工具和组件。
 
 目前已有很多优秀的框架可以帮助我们来开发企业级中后台应用，与他们不同的是，我们从一开始就没计划着要来做这么一件事。
 
@@ -9,7 +9,7 @@
 但术业有专攻，一些需要前端开发技巧的地方，他们可能就很难顾以周全了。这也是我们面临的问题。
 
 icefox 也是我们在工作过程中的一些经验积累。在应用的构建、开发以及发布等各个环节，我们希望能够有一些易用的工具或框架来帮助我们提高开发效率和质量，
-因此我们基于 [@vue/cli](https://cli.vuejs.org/zh/) 封装了一些 [构建工具](https://github.com/utryfe/vue-cli-builder)，
+因此我们基于 [@vue/cli](https://cli.vuejs.org/zh/) 封装了一些 [构建工具](https://github.com/icesjs/vue-cli-builder)，
 基于 element-ui 开发了一些常用的组件。仅此而已。
 
 **保持尽可能的简单**是我们的初衷，我们希望这些工具和组件能够发挥更大的价值，所以我们就在这里了。

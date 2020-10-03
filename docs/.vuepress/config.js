@@ -4,7 +4,7 @@ require('./browserShim')
 module.exports = {
   title: 'icefox',
   description: '基于 ElementUI 的企业中后台应用框架❤️',
-  base: '/icefox-docs/',
+  base: '/ices/',
   port: 12306,
   configureWebpack: {
     resolve: {
@@ -84,8 +84,8 @@ module.exports = {
       ],
     },
     //
-    repo: 'utryfe/icefox',
-    docsRepo: 'utryfe/icefox',
+    repo: 'icesjs/icefox',
+    docsRepo: 'icesjs/icefox',
     docsDir: 'docs',
     lastUpdated: '最后更新',
     editLinks: true,
